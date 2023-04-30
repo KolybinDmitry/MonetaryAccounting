@@ -1,0 +1,26 @@
+﻿<Window x:Class="MonetaryAccounting.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MonetaryAccounting"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="470" Width="800" Background="White">
+    <Grid>
+        <Button x:Name="buttonCreateNewNode" Content="Создать новую запись" HorizontalAlignment="Left" Margin="10,285,0,0" VerticalAlignment="Top" Height="31" Width="140" Click="buttonCreateNewNode_Click"/>
+        <Button x:Name="buttonNewTypeNode" Content="Новый тип записи" HorizontalAlignment="Left" Margin="10,172,0,0" VerticalAlignment="Top" Height="31" Width="140" Click="buttonNewTypeNode_Click"/>
+        <Button x:Name="buttonDeleteNode" Content="Удалить запись" HorizontalAlignment="Left" Margin="10,357,0,0" VerticalAlignment="Top" Height="31" Width="140" Click="buttonDeleteNode_Click"/>
+        <Button x:Name="buttonDeleteAll" Content="Удалить всё" HorizontalAlignment="Left" Margin="10,393,0,0" VerticalAlignment="Top" Height="31" Width="140" Click="buttonDeleteAll_Click"/>
+        <DatePicker x:Name="datePicker" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="780" Height="44" SelectedDateChanged="datePicker_SelectedDateChanged"/>
+        <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="166,64,10,66" CanUserReorderColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" AllowDrop="True"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="10,136,0,0" VerticalAlignment="Top" Width="140" Height="31"/>
+        <TextBox x:Name="textBoxNodeTitle" HorizontalAlignment="Left" Margin="10,100,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="140" Height="31"/>
+        <Label Content="Название заметки" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Height="31" Width="140"/>
+        <Label Content="Сумма денег" HorizontalAlignment="Left" Margin="10,208,0,0" VerticalAlignment="Top" Height="31" Width="140"/>
+        <TextBox x:Name="textBoxMoney" HorizontalAlignment="Left" Margin="10,244,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="140" Height="31"/>
+        <Button x:Name="buttonChangeNode" Content="Изменить заметку" HorizontalAlignment="Left" Margin="10,321,0,0" VerticalAlignment="Top" Height="31" Width="140" Click="buttonChangeNode_Click"/>
+        <Label Content="Итог: " HorizontalAlignment="Left" Margin="402,393,0,0" VerticalAlignment="Top" Height="31" Width="42"/>
+        <Label x:Name="labelResult" Content="0 " HorizontalAlignment="Left" Margin="449,393,0,0" VerticalAlignment="Top" Height="31" Width="42"/>
+
+    </Grid>
+</Window>

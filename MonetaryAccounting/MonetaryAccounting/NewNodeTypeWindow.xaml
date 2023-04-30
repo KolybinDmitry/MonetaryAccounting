@@ -1,0 +1,15 @@
+﻿<Window x:Class="MonetaryAccounting.NewNodeTypeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MonetaryAccounting"
+        mc:Ignorable="d"
+        Title="NewNodeTypeWindow" Height="194" Width="349" Background="#FFE8E8E8">
+    <Grid>
+        <Label Content="Введите новый тип заметки" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Width="164"/>
+        <Button x:Name="buttonNewNodeType" Content="Создать" HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Top" Height="28" Width="98" Click="buttonNewNodeType_Click"/>
+        <TextBox x:Name="textBoxNewNodeType" HorizontalAlignment="Center" Margin="0,68,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="330" Height="27"/>
+
+    </Grid>
+</Window>
